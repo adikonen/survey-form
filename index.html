@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 id="title">Study Survey Form</h1>
+      <p id="description">Please fill this survey form!</p>
+    </div>
+    <form id="survey-form">
+      <div class="input-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Ari Gunawan" required />
+      </div>
+      <div class="input-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+      </div>
+      <div class="input-group">
+        <label for="number" id="number-label">Age (optional)</label>
+        <input type="number" id="number" name="number" min="10" max="120" placeholder="20"/>
+      </div>
+      <div class="input-group">
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="" selected disabled>Select Role</option>
+          <option value="1">Elementary School Student</option>
+          <option value="2">Junior High School Student</option>
+          <option value="3">High School Student</option>
+          <option value="4">Others</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <span>Would you share this survey?</span>
+        <div class="radio-button-group">
+          <input type="radio" name="share" value="yes" id="yes"> <label for="yes">Yes, I Will Share</label>
+        </div>
+        <div class="radio-button-group">
+          <input type="radio" name="share" value="maybe" id="maybe"> <label for="maybe">Maybe</label>
+        </div>
+        <div class="radio-button-group">
+          <input type="radio" name="share" value="not-sure" id="not-sure"> <label for="not-sure">Not Sure</label>
+        </div>
+      </div>
+      <div class="input-group">
+        <span>Which learning styles you like?</span>
+        <div class="checkbox-button-group">
+          <input type="checkbox" name="solo_learn"  value="solo-learn" id="solo-learn"/> <label for="solo-learn">Solo learn</label>
+        </div>
+        <div class="checkbox-button-group">
+          <input type="checkbox" name="with_friends" id="with-friends" value="with-friends"/> <label for="with-friends">With Friends</label>
+        </div>
+        <div class="checkbox-button-group">
+          <input type="checkbox" name="with_family" id="with-family" value="with-family"/> <label for="with-family">With Family</label>
+        </div>
+        <div class="checkbox-button-group">
+          <input type="checkbox" value="hate" name="hate" id="hate"/> <label for="hate">I Hate Study</label>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here...."></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
